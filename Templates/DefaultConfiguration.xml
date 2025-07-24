@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <HyperVDeployment>
+    <Timestamp>2025-06-11T18:45:00</Timestamp>
+    <Version>1.0.0</Version>
+    
+    <!-- Single Host Configuration Template -->
+    <SingleHost>
+      <HyperVRole>
+        <Install>true</Install>
+        <IncludeManagementTools>true</IncludeManagementTools>
+        <RestartIfRequired>false</RestartIfRequired>
+      </HyperVRole>
+      
+      <VirtualSwitches>
+        <External>
+          <Create>true</Create>
+          <Name>External-Switch</Name>
+          <AllowManagementOS>true</AllowManagementOS>
+          <AdapterName>Auto</AdapterName>
+        </External>
+        <Internal>
+          <Create>true</Create>
+          <Name>Internal-Switch</Name>
+        </Internal>
+        <Private>
+          <Create>false</Create>
+          <Name>Private-Switch</Name>
+        </Private>
+      </VirtualSwitches>
+      
+      <Storage>
+        <VirtualMachinePath>{BaseDirectory}\VMs</VirtualMachinePath>
+        <VirtualHardDiskPath>{BaseDirectory}\VMs\Virtual Hard Disks</VirtualHardDiskPath>
+        <EnableStorageQoS>true</EnableStorageQoS>
+      </Storage>
+      
+      <Memory>
+        <NumaSpanningEnabled>false</NumaSpanningEnabled>
+        <EnableEnhancedSessionMode>true</EnableEnhancedSessionMode>
+        <MaximumVirtualMachineMigrations>2</MaximumVirtualMachineMigrations>
+        <MaximumStorageMigrations>2</MaximumStorageMigrations>
+      </Memory>
+      
+      <AdvancedFeatures>
+        <EnableResourceMetering>true</EnableResourceMetering>
+        <ConfigureIntegrationServices>true</ConfigureIntegrationServices>
+        <EnableHyperVReplica>false</EnableHyperVReplica>
+        <CheckSRIOVSupport>true</CheckSRIOVSupport>
+      </AdvancedFeatures>
+    </SingleHost>
+    
+    <!-- Multi-Host Configuration Template (Future) -->
+    <MultiHost>
+      <Enabled>false</Enabled>
+      <!-- Configuration for cluster deployments -->
+    </MultiHost>
+    
+    <!-- VM Templates (Future) -->
+    <VMTemplates>
+      <DomainController>
+        <CPU>2</CPU>
+        <Memory>4096</Memory>
+        <Storage>80</Storage>
+      </DomainController>
+      <ApplicationServer>
+        <CPU>4</CPU>
+        <Memory>8192</Memory>
+        <Storage>120</Storage>
+      </ApplicationServer>
+      <DatabaseServer>
+        <CPU>8</CPU>
+        <Memory>16384</Memory>
+        <Storage>200</Storage>
+      </DatabaseServer>
+    </VMTemplates>
+  </HyperVDeployment>
+</Configuration>

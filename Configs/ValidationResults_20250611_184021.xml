@@ -1,0 +1,179 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Collections.Hashtable</T>
+      <T>System.Object</T>
+    </TN>
+    <DCT>
+      <En>
+        <S N="Key">Status</S>
+        <B N="Value">false</B>
+      </En>
+      <En>
+        <S N="Key">Results</S>
+        <Obj N="Value" RefId="1">
+          <TNRef RefId="0" />
+          <DCT>
+            <En>
+              <S N="Key">SoftwareValidation</S>
+              <Obj N="Value" RefId="2">
+                <TNRef RefId="0" />
+                <DCT>
+                  <En>
+                    <S N="Key">Details</S>
+                    <Obj N="Value" RefId="3">
+                      <TN RefId="1">
+                        <T>System.Object[]</T>
+                        <T>System.Array</T>
+                        <T>System.Object</T>
+                      </TN>
+                      <LST>
+                        <S>✓ Operating System: Microsoft Windows 11 Enterprise (Build 26100)</S>
+                        <S>✓ PowerShell Version: 7.5.1</S>
+                        <S>✓ PowerShell Execution Policy: Bypass</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                  <En>
+                    <S N="Key">Status</S>
+                    <B N="Value">false</B>
+                  </En>
+                  <En>
+                    <S N="Key">Issues</S>
+                    <Obj N="Value" RefId="4">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>Error during software validation: The term 'Get-WindowsFeature' is not recognized as a name of a cmdlet, function, script file, or executable program._x000D__x000A_Check the spelling of the name, or if a path was included, verify that the path is correct and try again.</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                </DCT>
+              </Obj>
+            </En>
+            <En>
+              <S N="Key">RoleValidation</S>
+              <Obj N="Value" RefId="5">
+                <TNRef RefId="0" />
+                <DCT>
+                  <En>
+                    <S N="Key">Details</S>
+                    <Obj N="Value" RefId="6">
+                      <TNRef RefId="1" />
+                      <LST />
+                    </Obj>
+                  </En>
+                  <En>
+                    <S N="Key">Status</S>
+                    <B N="Value">false</B>
+                  </En>
+                  <En>
+                    <S N="Key">Issues</S>
+                    <Obj N="Value" RefId="7">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>Error during role validation: The term 'Get-WindowsFeature' is not recognized as a name of a cmdlet, function, script file, or executable program._x000D__x000A_Check the spelling of the name, or if a path was included, verify that the path is correct and try again.</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                </DCT>
+              </Obj>
+            </En>
+            <En>
+              <S N="Key">NetworkValidation</S>
+              <Obj N="Value" RefId="8">
+                <TNRef RefId="0" />
+                <DCT>
+                  <En>
+                    <S N="Key">Details</S>
+                    <Obj N="Value" RefId="9">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>✓ Active Network Adapters: 1 found</S>
+                        <S>    - Wi-Fi (Intel(R) Wi-Fi 6E AX211 160MHz)</S>
+                        <S>✓ DNS Resolution: Working</S>
+                        <S>ℹ Domain Status: Workgroup (not domain joined)</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                  <En>
+                    <S N="Key">Status</S>
+                    <B N="Value">true</B>
+                  </En>
+                  <En>
+                    <S N="Key">Issues</S>
+                    <Obj N="Value" RefId="10">
+                      <TNRef RefId="1" />
+                      <LST />
+                    </Obj>
+                  </En>
+                </DCT>
+              </Obj>
+            </En>
+            <En>
+              <S N="Key">HardwareValidation</S>
+              <Obj N="Value" RefId="11">
+                <TNRef RefId="0" />
+                <DCT>
+                  <En>
+                    <S N="Key">Details</S>
+                    <Obj N="Value" RefId="12">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>✓ RAM: 31.46 GB (Minimum 4GB required)</S>
+                        <S>✓ Free Disk Space: 252.79 GB (Minimum 20GB recommended)</S>
+                        <S>✓ CPU Cores: 12 (Minimum 2 recommended)</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                  <En>
+                    <S N="Key">Status</S>
+                    <B N="Value">false</B>
+                  </En>
+                  <En>
+                    <S N="Key">Issues</S>
+                    <Obj N="Value" RefId="13">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>✗ Virtualization Technology: Not detected or not enabled in BIOS</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                </DCT>
+              </Obj>
+            </En>
+            <En>
+              <S N="Key">StorageValidation</S>
+              <Obj N="Value" RefId="14">
+                <TNRef RefId="0" />
+                <DCT>
+                  <En>
+                    <S N="Key">Details</S>
+                    <Obj N="Value" RefId="15">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>✓ Drive C: - Size: 475.65 GB, Free: 252.79 GB</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                  <En>
+                    <S N="Key">Status</S>
+                    <B N="Value">false</B>
+                  </En>
+                  <En>
+                    <S N="Key">Issues</S>
+                    <Obj N="Value" RefId="16">
+                      <TNRef RefId="1" />
+                      <LST>
+                        <S>Error during storage validation: The term 'Get-WindowsFeature' is not recognized as a name of a cmdlet, function, script file, or executable program._x000D__x000A_Check the spelling of the name, or if a path was included, verify that the path is correct and try again.</S>
+                      </LST>
+                    </Obj>
+                  </En>
+                </DCT>
+              </Obj>
+            </En>
+          </DCT>
+        </Obj>
+      </En>
+    </DCT>
+  </Obj>
+</Objs>
